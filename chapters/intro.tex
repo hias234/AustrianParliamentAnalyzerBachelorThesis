@@ -1,17 +1,18 @@
 \chapter{Introduction}
 \label{sec:introduction}
 
-One of the most crucial requirements of a democracy is transparency. There are several ways how one can gain information about the current and past political activities in Austria. One of them are the publicly available protocols of the national council sessions. In these protocols every word said in a session is written down and that makes up the corresponding protocol. Unfortunately, these protocols are very long and it is hard to gain meaning out of it.
+One of the most crucial requirements of a democracy is transparency. There are several ways how one can gain information about the current and past political activities in Austria. One of the best possibilities among them are the publicly available protocols of the national council sessions. In these protocols every word said in a session is written down and that makes up the corresponding protocol. Unfortunately, these protocols are very long and it is hard to gain meaning out of it, because of its plain and simple structure and the great amount of data.
 
-To be able to analyze and visualize the activities and relations of the politicians and parties in a better way, during this thesis the protocols are being extracted, analyzed and visualized. 
+To be able to analyze and visualize the activities and relations of the politicians and parties in a better way, during this thesis the protocols are being extracted, transformed, analyzed and visualized.
 
 \section{Research Goals}
-The protocols are currently available in semi-structured form - through HTML files. To be able to properly persist and analyze the data, the protocols should be transformed into a fully structured form (e.g. Java Objects). The following elements will be extracted:
+The protocols are currently available in semi-structured form - through HTML files. To be able to properly persist and analyze the data, the protocols have to be transformed into a fully structured form (e.g. Java Objects). The following elements will be extracted:
 \begin{itemize}
   \item Legislative periods and their sessions
   \item Politicians and their mandates
   \item Parliament clubs
   \item Discussions and speeches during the sessions
+  \item Relations among the above listed elements
 \end{itemize}
 
 As soon as this is done, the extracted data should be persisted into a arbitrary relational database. Furthermore, some general and network analysis should be done on the data. The following list includes some of the analysis.
