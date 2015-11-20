@@ -40,7 +40,7 @@
 %\def\study{Technischen Wissenschaften}
 %\def\study{Naturwissenschaften}
 %
-\def\study{Informatik}
+\def\study{Computer Science}
 %
 %
 % enter the name of the student
@@ -74,7 +74,7 @@
 %
 %
 % enter month year
-\def\date{Someday, 2015}
+\def\date{20. November, 2015}
 %
 %
 % the vertival alignment heavily depends on the length of the title if there are
@@ -91,7 +91,7 @@
 \sffamily
 \begin{picture}(0,0)
 \put(-2.6,5){\color{mygray}\rule{25cm}{2.6cm}}
-\put(10.8,5.15){\small UNIVERSIT\"AT}
+\put(10.8,5.15){\small UNIVERSITY}
 \put(13.62,5.15){\small LINZ}
 \put(10.8,5.5){\small JOHANNES}
 \put(13,5.5){\small KEPLER}
@@ -99,20 +99,21 @@
 \put(14.75,5.15){\line(0,1){.6}}
 \put(9.7,5.6){\includegraphics[width=9mm]{wap_small}}
 \put(0,1){\includegraphics[width=3cm]{tnf}}
-\put(3.2,1.4){\scriptsize Technisch-Naturwissenschaftliche}
-\put(3.2,1.05){\scriptsize Fakult\"at}
+\put(3.2,1.4){\scriptsize Faculty of Engineering}
+\put(3.2,1.05){\scriptsize and Natural Sciences}
 \end{picture}
 %
 \begin{center}
 {\LARGE\bfseries\title}
 \bigskip\bigskip\bigskip\par
-{\Large\ifcase\type DISSERTATION\or DIPLOMARBEIT\or MASTERARBEIT\fi}
+{\Large\ifcase\type DISSERTATION\or DIPLOMARBEIT\or MASTERARBEIT \or BACHELOR'S THESIS\fi}
 \bigskip\par
-zur Erlangung des akademischen Grades
+submitted in partial fulfillment of the requirements\\
+for the academic degree
 \bigskip\smallskip\par
 {\Large\degree}
 \bigskip\par
-im \ifcase\type Doktoratsstudium der\or Diplomstudium\or Masterstudium\or Bachelorstudium\fi
+in \ifcase\type Doktoratsstudium der\or Diplomstudium\or Masterstudium\or the Bachelor’s Program\fi
 \bigskip\smallskip\par
 {\Large\study}
 \end{center}
@@ -120,15 +121,15 @@ im \ifcase\type Doktoratsstudium der\or Diplomstudium\or Masterstudium\or Bachel
 % more space ???
 %\bigskip
 \bigskip\bigskip\bigskip\par
-Eingereicht von:
+Submitted By:
 \smallskip\par
 {\large\name}
 \medskip\bigskip\par
-Angefertigt am:
+At the:
 \smallskip\par
 {\large\institute}
 \medskip\bigskip\par
-Beurteilung:
+Advisor:
 \smallskip\par
 {\large\firstreferee}
 \ifundefined{secondreferee}\else {\large (Betreuung)}
