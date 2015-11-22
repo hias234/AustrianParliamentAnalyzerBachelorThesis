@@ -41,8 +41,6 @@ chapterprefix,headsepline,parskip,pdftex,
 \usepackage{caption}
 \usepackage{subcaption}
 
-
-
 \usepackage[colorlinks=true,
     linkcolor=black,
     citecolor=black,
@@ -203,3 +201,19 @@ numbers=left, numberstyle=\tiny, numbersep=5pt}
 
 %%% Einbinden von kompletten PDF-Seiten
 \usepackage{pdfpages}
+
+\usepackage{subcaption}
+\expandafter\def\csname ver@subfig.sty\endcsname{}
+
+\usepackage{ifluatex}
+\ifluatex
+  \usepackage{pdftexcmds}
+  \makeatletter
+  \let\pdfstrcmp\pdf@strcmp
+  \let\pdffilemoddate\pdf@filemoddate
+  \makeatother
+\fi
+
+\usepackage{svg}
+
+\usepackage{amsmath}
