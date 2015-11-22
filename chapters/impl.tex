@@ -16,9 +16,23 @@ Figure \ref{fig:general_architecture} shows the general architecture of the prot
 
 \section{Data Extraction and Transforming}
 \label{sec:data_extraction_transforming}
-The first step which has to be done in the ETL-Application is the extraction. The data which should be transformed has to be collected and stored. In our case the data is contained in the stenographic protocols of the national council and politician profiles. Both the protocols and politician profiles are publicly available and can be found at the website of the Austrian parliament (See \url{https://www.parlament.gv.at/PAKT/STPROT/} and \url{https://www.parlament.gv.at/WWER/PARL/}). Furthermore, the protocols are available in PDF-format and since the $20^{th}$ legislative period also in HTML. As the transforming of the PDF-files would not result in sufficient quality, in this thesis only the HTML-files (the data since the $20^{th}$ legislative period) is being extracted and analyzed.
+The first step which has to be done in the ETL-Application is the extraction. The data which should be transformed has to be collected and stored. In our case the data is contained in the stenographic protocols of the national council and politician profiles. Both the protocols and politician profiles are publicly available and can be found at the website of the Austrian parliament (See \url{https://www.parlament.gv.at/PAKT/STPROT/} and \url{https://www.parlament.gv.at/WWER/PARL/}). Furthermore, the protocols are available in PDF-format and since the $20^{th}$ legislative period also in HTML. As the transforming of the PDF-files would not result in sufficient quality, in this thesis only the HTML-files (the data since the $20^{th}$ legislative period) are being extracted and analyzed.
 
-To collect the needed files automatically RSS feeds are used. This feed shows a list of the protocols of a specific legislative period. The application reads the feed and downloads all the protocols of the period. Then the content of each of the files get transformed into Java objects. To be able to understand the transformation process the structure of the file has to be clear. 
+To collect the needed files automatically, RSS feeds are used. There are feeds available for both, stenographic protocols and politician profiles. The HTML-files which are linked in the feeds are being downloaded and stored on the file system.
+
+\subsection{Transforming of the Politician Profiles}
+In the next step the profiles of the politicians are transformed into Java objects. Figure \ref{fig:politician_profile_example} shows the structure of such a Profile. The name (and if provided previous names), titles, the birth date, and the mandates are being extracted from the HTML code. Mandates are some kind of political functions like the membership in the national or federal council or the period where the politician was a federal minister.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=341px]{imgs/politician_profile_example}
+	\caption{Example of a Politician Profile}
+	\label{fig:politician_profile_example}
+\end{figure}
+
+
+\subsection{File Structure}
+For every 
 
 \section{Export into Database}
 \label{sec:export_db}
