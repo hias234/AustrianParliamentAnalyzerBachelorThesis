@@ -16,12 +16,12 @@ Figure \ref{fig:general_architecture} shows the general architecture of the prot
 
 \section{Data Extraction and Transforming}
 \label{sec:data_extraction_transforming}
-The first step which has to be done in the ETL-Application is the extraction. The data which should be transformed has to be collected and stored. In our case the data is contained in the stenographic protocols of the national council and politician profiles. Both the protocols and politician profiles are publicly available and can be found at the website of the Austrian parliament (See \url{https://www.parlament.gv.at/PAKT/STPROT/} and \url{https://www.parlament.gv.at/WWER/PARL/}). Furthermore, the protocols are available in PDF-format and since the $20^{th}$ legislative period also in HTML. As the transforming of the PDF-files would not result in sufficient quality, in this thesis only the HTML-files (the data since the $20^{th}$ legislative period) are being extracted and analyzed.
+The first step which has to be done in the ETL-Application is the extraction. The data which should be transformed has to be collected and stored. In our case the data is contained in the stenographic protocols of the national council and in politician profiles. Both the protocols and politician profiles are publicly available and can be found at the website of the Austrian parliament (See \url{https://www.parlament.gv.at/PAKT/STPROT/} and \url{https://www.parlament.gv.at/WWER/PARL/}). The protocols are available in PDF-format and since the $20^{th}$ legislative period also in HTML. As the transforming of the PDF-files would not result in sufficient quality, in this thesis only the HTML-files (the data since the $20^{th}$ legislative period) are being extracted and analyzed.
 
 To collect the needed files automatically, RSS feeds are used. There are feeds available for both, stenographic protocols and politician profiles. The HTML-files which are linked in the feeds are being downloaded and stored on the file system.
 
 \subsection{Transforming of the Politician Profiles}
-In the next step the profiles of the politicians are transformed into Java objects. Figure \ref{fig:politician_profile_example} shows the structure of such a Profile. The name (and if provided previous names), titles, the birth date, and the mandates are being extracted from the HTML code. Mandates are some kind of political functions like the membership in the national or federal council or the period where the politician was a federal minister.
+In the next step the profiles of the politicians are transformed into Java objects. Figure \ref{fig:politician_profile_example} shows such a Profile. The name (and if provided previous names), the titles, the birth date, and the political mandates are being extracted from the HTML code. Mandates are some kind of political functions like the membership in the national or federal council or the period where the politician was a federal minister. They are important especially because they include the club memberships of the politician within a specific period of time. To be able to extract these features out of the HTML code, the structure of the HTML file (e.g. the name of the politician is in the first <h1> tag of the page) and regular expressions are used. Figure \ref{fig:politicians_mandates_class_diagram} shows the class diagram of the resulting Java objects, extracted out of the profiles.
 
 \begin{figure}
 	\centering
@@ -30,12 +30,27 @@ In the next step the profiles of the politicians are transformed into Java objec
 	\label{fig:politician_profile_example}
 \end{figure}
 
+\begin{figure}
+	\centering
+	\includegraphics[width=341px]{imgs/politicians_mandates_class_diagram}
+	\caption{Class Diagram of the Profile Transformation Step}
+	\label{fig:politicians_mandates_class_diagram}
+\end{figure}
 
-\subsection{File Structure}
-For every 
+\subsection{Transforming of the Protocols}
+For each session, there are two files: The full text protocol and the protocol summary. Information that gets extracted out of the protocols includes sessions of legislative periods, chair men in the sessions, politician absences, discussions and speeches of politicians. Figure \ref{fig:session_class_diagram} shows the class diagram of the resulting Objects from the protocol transformation step.
 
-\section{Export into Database}
+\begin{figure}
+	\centering
+	\includegraphics[width=341px]{imgs/session_class_diagram}
+	\caption{Class Diagram of the Protocol Transformation Step}
+	\label{fig:session_class_diagram}
+\end{figure}
+
+
+\section{Export into a Database}
 \label{sec:export_db}
+The export to a database is the loading part of the ETL application. The in the previous step created Java objects are being persisted into a relational database. To stay independent of specific databases the Java Persistence API and Hibernate are used. This brings the advantages that no SQL-statements have to be written and changes are easily made.
 
 \section{Analysis}
 \label{sec:analysis}
