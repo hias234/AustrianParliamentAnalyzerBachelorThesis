@@ -64,7 +64,7 @@ The export to a database is the loading part of the ETL-application. The in the 
 
 \section{Analysis}
 \label{sec:analysis}
-The first step of the analysis phase was to determine which analysis could be applied on the given data. The results can be classified into two categories: simple analysis and network analysis. The simple analysis takes just simple measures like how many speeches a politician held during a legislative period or how often was he absent. Table \ref{table:simple_analysis} shows all simple analysis measures taken. The network analysis will be discussed in section \ref{sec:network_analysis}.
+The first step of the analysis phase was to determine which analysis could be applied on the given data. The results can be classified into two categories: simple analysis and network analysis. The simple analysis takes just simple measures like how many speeches a politician held during a legislative period or how often was he absent. Table \ref{table:simple_analysis} shows all simple analysis measures taken. The network analysis will be discussed in section \ref{sec:network_analysis}. The measures are taken just via SQL queries on the database built up by the ETL Application.
 
 \begin{table}
 \begin{tabular}{| p{5cm} | p{8cm} |}
@@ -89,7 +89,13 @@ Count of Speeches of politicians per Period & The count of speeches a politician
 
 \subsection{Network Analysis}
 \label{sec:network_analysis}
-description of how the relation-graphs get built...
+All the speeches in the Austrian parliament are tagged with a annotation. About $\frac{2}{3}$ of them are tagged with either pro or con. This gives the possibility to create a relation graph of all the politicians (and parliamentary clubs) based on their speeches in the sessions of the parliament and if they had the same position on the discussion or a contrary one.
+
+To be able to create such a graph, first the data has to be brought in a form in which it can be queried with little effort. To have the data in the necessary form, immediately after the loading of the ETL-Application the discussion speeches get analyzed and the relations of the politicians are extracted. The algorithm iterates over all discussions and investigates the discussion speeches. For each politician pair, which takes part in the discussion, the relation is computed. If they have the same position on the topic of the discussion (either if both are pro or both are con), the weight is $+1$, else the weight is $-1$. This results in a table with the fields id, discussion\_id, politician1\_id, politician2\_id and weight. So if the relation of two politicians should be computed, the following formula is applied:
+
+$$w_{p_1,p_2} = \frac{\sum_{i=0}^{D} w_{d_i,p_1,p_2}}{\sum_{i=0}^{D} |w_{d_i,p_1,p_2}|}$$
+
+where D is the total number of discussions and $w_{d_i,p_1,p_2}$ is the weight of the politicians $p_1$ and $p_2$ in the discussion $d_i$. If not both politicians spoke in the discussion $d_i$ the weight is zero. The result of this formula is a normalized number between $+1$ and $-1$, where $+1$ means that the two politicians had the same opinion on every topic and $-1$ means that they have totally contrary opinions.
 
 \section{Visualization}
 \label{sec:visualization}
