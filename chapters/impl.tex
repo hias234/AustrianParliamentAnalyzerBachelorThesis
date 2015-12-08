@@ -72,9 +72,9 @@ The export to a database is the loading part of the ETL-application. The in the 
 
 \section{Analysis}
 \label{sec:analysis}
-The first step of the analysis phase was to determine which analysis could be applied on the given data. The results can be classified into two categories: simple analysis and network analysis. The simple analysis takes just simple measures like how many speeches a politician held during a legislative period or how often was he absent. These measures are taken via SQL queries on the database built up by the ETL Application. Table \ref{table:simple_analysis} shows all simple analysis measures taken. The network analysis will be discussed in the following section.
+The first step of the analysis phase was to determine which analysis could be applied on the given data. The results can be classified into two categories: simple analysis and network analysis. The simple analysis takes just simple measures like how many speeches a politician held during a legislative period or how often was he absent. These measures are taken via SQL queries on the database built up by the ETL Application. Table \ref{table:simple_analysis} shows all simple analysis measures taken. The network analysis will be discussed in the following sections.
 
-\begin{table}
+\begin{table}[h]
 \begin{tabular}{| p{5cm} | p{8cm} |}
 \hline
   Name & Description \\
@@ -95,9 +95,8 @@ Count of Speeches of politicians per Period & The count of speeches a politician
 \label{table:simple_analysis}
 \end{table}
 
-\subsection{Network Analysis}
-\label{sec:network_analysis}
-Network analysis similiar to the the one Lucioni \cite{Lucioni_2015} did is done in this thesis. There are measures taken, how strong two politicians/clubs are related and the result is shown in a network graph, in which you can visually see the groups of politicians/clubs which belong together and how strong the are related, either positively or negatively. Fortunately, all the speeches in the Austrian parliament are tagged with an annotation. A majority of them are tagged with either pro or con, speeches with other annotations are less interesting in the context of this thesis and won't be considered in the following analysis. The pro-con annotations of the speeches are used to create the relation graphs of all the politicians based on their position (pro or con) on the topics of the discussions they held speeches in. Such a graph shows visually how related two politicians are. If two politicians have a strong positive relationship (if they have the same attitudes in the discussions) they will be displayed close together, but if they have a strong negative relationship (mainly contrary attitudes) they will be displayed far away from each other.
+\subsection{Politician Relation Graph}
+Network analysis similiar to the one Lucioni \cite{Lucioni_2015} did is done in this thesis. There are measures taken, how strong two politicians are related and the result is shown in a network graph, in which you can visually see the groups of politicians which belong together and how strong the are related, either positively or negatively. Fortunately, all the speeches in the Austrian parliament are tagged with an annotation. A majority of them are tagged with either pro or con, speeches with other annotations are less interesting in the context of this thesis and won't be considered in the following analysis. The pro-con annotations of the speeches are used to create the relation graphs of all the politicians based on their position (pro or con) on the topics of the discussions they held speeches in. The graph shows visually how related two politicians are. If two politicians have a strong positive relationship (if they have the same attitudes in the discussions) they will be displayed close together, but if they have a strong negative relationship (mainly contrary attitudes) they will be displayed far away from each other.
 
 The nodes of this graph are the politicians and the links are the relationships between them, but to create a good network graph, we have to measure the link weight. Lucioni \cite{Lucioni_2015} used the voting data, whereas in the context of the Austrian thesis the speech annotations are used. The strength of a relationship (the link weight $w_p(p_1,p_2)$) between two politicians $p_1$ and $p_2$ is calculated via the following formula:
 
@@ -113,9 +112,10 @@ $$w_p(d_i,p_1,p_2) =
 \end{cases}
 $$
 
-In this thesis politician relation graphs get built for all legislative periods, to be able to view the structure of each period separately. To achieve to get a graph for only one period, only the discussions of this period were taken into account. The nodes of such a graphs are the politicians and the links are the relations between the politicians. There exists a link between two politicians if they spoke at least once in the same discussion. 
+In this thesis politician relation graphs get built for all legislative periods, to be able to view the structure of each period separately. To achieve to get a graph for only one period, only the discussions of this period were taken into account. The nodes of such a graphs are the politicians and the links are the relations between the politicians. There exists a link between two politicians if they spoke at least once in the same discussion.
 
-Similar graphs can be constructed for the parliamentary clubs. These graphs show how the clubs are related to each other. The weights of the links of these graphs are computed by summing all weights of the politicians of the clubs $c_1$ and $c_2$ and normalizing the sum. This can be expressed using the formula:
+\subsection{Parliamentary Club Relation Graph}
+Similar graphs can be constructed for the parliamentary clubs. These graphs show how the clubs are related to each other. The weights of the links of these graphs are computed by summing all weights of the politicians of the clubs $c_1$ and $c_2$ and normalizing the sum. This can be expressed using the following formula:
 
 $$
 w_c(c_1,c_2) = \frac{\displaystyle\sum_{i=0}^{D} w_c(d_i,c_1,c_2)}{\displaystyle\sum_{i=0}^{D} |w_c(d_i,c_1,c_2)|}
@@ -127,7 +127,8 @@ $$
 
 The result $w_c(c_1,c_2)$ is again a normalized number from $-1$ to $+1$ and describes how the clubs are related. $P_{c_x}$ describes the count of the politicians which belong to $c_x$ and $p_{c_x,y}$ is the $y^{th}$ politician which belongs to the parliamentary club $c_x$. Analogously to $w_p(d_i,p_1,p_2)$, $w_c(d_i,c_1,c_2)$ describes the weight of the clubs $c_1$ and $c_2$ in the discussion $d_i$ and is also in the range of $-1$ to $+1$.
 
-
+\subsection{Pre-Calculation of Relation Weights}
+The calculation of all weights for the relations is quite expensive, as there are $\frac{n * (n - 1)}{2}$ weights which have to be calculated for every discussion (n is the number of politicians which spoke in the discussion). So, if a graph should be displayed, it would take too long to compute all these weights then. To handle this problems all politician relation weights $w_p(d_i,p_1,p_2)$ are calculated and persisted into the database immediately after new data is available (after the loading step of the ETL Application). When the data is needed to show the graph the database gets queried and using the aggregation functions of the database $w_p(p_1,p_2)$ and $w_c(c_1,c_2)$ can be easily derived for each pair of politicians and parliamentary clubs in an arbitrary period of time.
 
 \section{Visualization}
 \label{sec:visualization}
