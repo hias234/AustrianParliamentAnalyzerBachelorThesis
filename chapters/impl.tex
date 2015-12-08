@@ -86,7 +86,9 @@ Absence of a Politician per Period & A percentage of the absence of one national
 \hline
 Absence of a Parliamentary club per Period & A percentage of the absence of all members of one parliamentary club in one legislative period. \\
 \hline
-Count of Speeches of politicians per Period & The count of speeches a politician held in the national council during one legislative period. \\
+Count of Speeches per Politicians and Period & The count of speeches a politician held in the national council during one legislative period. \\
+\hline
+Mandate Distribution per Period & The assignment of the 183 political mandates to the parliamentary clubs. \\
 \hline
 
 \end{tabular}
@@ -129,6 +131,9 @@ The result $w_c(c_1,c_2)$ is again a normalized number from $-1$ to $+1$ and des
 
 \subsection{Pre-Calculation of Relation Weights}
 The calculation of all weights for the relations is quite expensive, as there are $\frac{n * (n - 1)}{2}$ weights which have to be calculated for every discussion (n is the number of politicians which spoke in the discussion). So, if a graph should be displayed, it would take too long to compute all these weights then. To handle this problems all politician relation weights $w_p(d_i,p_1,p_2)$ are calculated and persisted into the database immediately after new data is available (after the loading step of the ETL Application). When the data is needed to show the graph the database gets queried and using the aggregation functions of the database $w_p(p_1,p_2)$ and $w_c(c_1,c_2)$ can be easily derived for each pair of politicians and parliamentary clubs in an arbitrary period of time.
+
+\subsection{Other Analysis with the Relation Weights}
+With the now available weights between the politicians and parliamentary clubs also analysis other than the relation graph can be applied. By summing all the weights where one politician is in the government whereas the other one is in the opposition, a general tendency on how distinct government and opposition are can be calculated. See the results in section \todo{section einfügen... hier könnte man eigentlich wieder eine Formel einfügen... aber ist denke ich zu viel des guten}
 
 \section{Visualization}
 \label{sec:visualization}
