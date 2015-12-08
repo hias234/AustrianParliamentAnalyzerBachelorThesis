@@ -24,7 +24,7 @@ INSERT INTO governing_parties (period, club_shortname) VALUES (25, 'ÖVP');
 
 select * from governing_parties;
 
-select period, ((select SUM(weight) from politician_attitude_relation
+create view gov_opp_relation as select period, ((select SUM(weight) from politician_attitude_relation
 inner join discussion d on (d.id = discussion_id)
 inner join session s on (s.id = session_id)
 inner join politician p1 on (p1.id = politician1_id)
@@ -71,6 +71,8 @@ and period = lp.period)) as double precision)
 from legislative_period lp
 where period >= 20
 order by period asc;
+
+select * from gov_opp_relation where period = 25;
 
 select period, SUM(weight), cast(count(*) as double precision) from politician_attitude_relation
 inner join discussion d on (d.id = discussion_id)
