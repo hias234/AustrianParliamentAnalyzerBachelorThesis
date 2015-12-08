@@ -95,3 +95,4 @@ where m2.club_shortname is not null and m1.club_shortname is not null
 and not(m1.club_shortname = 'ÖVP' or m1.club_shortname = 'SPÖ')
 and (m2.club_shortname = 'ÖVP' or m2.club_shortname = 'SPÖ')
 and period = 23;
+

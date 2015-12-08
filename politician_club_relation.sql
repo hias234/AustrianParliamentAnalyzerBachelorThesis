@@ -7,7 +7,8 @@ inner join politician p2 on (p2.id = politician2_id)
 inner join mandate m2 on (m2.politician_id = p2.id and start_date > m2.valid_from and (m2.valid_until is null or start_date < m2.valid_until))
 where m2.club_shortname is not null and m1.club_shortname is not null
 and period = 25
-group by p1.sur_name, m1.club_shortname, m2.club_shortname;
+group by p1.sur_name, m1.club_shortname, m2.club_shortname
+order by p1.sur_name;
 
 
 
