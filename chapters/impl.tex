@@ -141,7 +141,16 @@ With the now available weights between the politicians and parliamentary clubs a
 \label{sec:visualization}
 The visualization of the extracted data was an important task because only if the data is shown in a proper way it will potentially address a broad spectrum of people. That's why there was a big empathize on the data representation. Another requirement was that the application should run on as many devices as possible. Therefore a web application was implemented, as it will be accessible for almost anybody in the world, as long as he/she has a device with internet and a browser. A few web frameworks were evaluated and it was chosen an architecture with Spring Boot in the back end offering JSON/REST web services and Polymer in the front end for the visual representation.
 
-\begin{figure}[h]
+\subsection{Navigation Concept}
+Figure \ref{fig:navigation_concept} shows the navigation concept of the implemented prototype. The start page shows an overview of the available pages and short statistics for the current legislative period like the mandate distribution and the overall absence. From the start page it is possible to navigate to the politician overview, the legislative period overview, the politician and the parliamentary club relation graph pages. 
+
+The politician overview shows the members of the national council of a period, which one can specify. For each politician, the absence percentage and the speech count in this period is presented. If a politician is selected one gets to the politician's detail page. There is general data of the politician, the political mandates and the most/least related politicians shown.
+
+The legislative period overview shows all legislative periods which were considered for this thesis (all from the $20^{th}$) with short statistics. If a period gets selected one gets to the period detail page where also a ranking of the most active and most absent politicians and clubs is shown.
+
+On the politician and club relation graph pages you can see the graph for the selected period. In the politician relation graph there is also the possibility to filter for a specific topic of a discussion. Furthermore, one can set a min count of speeches two politicians have spoken in, before their relation is shown in the graph. This creates the possibility to have a cleaner graph which only shows relations which are known to be correct.
+
+\begin{figure}
 	\centering
 	\includegraphics[width=\textwidth]{imgs/navigation_concept}
 	\caption{Navigation Concept of the Web Application}
