@@ -75,6 +75,9 @@ The export to a database is the loading part of the ETL-application. The in the 
 The first step of the analysis phase was to determine which analysis could be applied on the given data. The results can be classified into two categories: simple analysis and network analysis. The simple analysis takes just simple measures like how many speeches a politician held during a legislative period or how often was he absent. These measures are taken via SQL queries on the database built up by the ETL Application. Table \ref{table:simple_analysis} shows all simple analysis measures taken. The network analysis will be discussed in the following sections.
 
 \begin{table}[h]
+
+\bgroup
+\def\arraystretch{1.2}
 \begin{tabular}{| p{5cm} | p{8cm} |}
 \hline
   Name & Description \\
@@ -92,6 +95,7 @@ Mandate Distribution per Period & The assignment of the 183 political mandates t
 \hline
 
 \end{tabular}
+\egroup
 
 \caption{Simple Analysis Measures}
 \label{table:simple_analysis}
