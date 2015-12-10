@@ -104,6 +104,7 @@ Mandate Distribution per Period & The assignment of the 183 political mandates t
 \end{table}
 
 \subsection{Politician Relation Graph}
+\label{sec:pol_relation_graph}
 Network analysis similiar to the one Lucioni \cite{Lucioni_2015} did is done in this thesis. There are measures taken, how strong two politicians are related and the result is shown in a network graph, in which you can visually see the groups of politicians which belong together and how strong the are related, either positively or negatively. Fortunately, all the speeches in the Austrian parliament are tagged with an annotation. A majority of them are tagged with either pro or con, speeches with other annotations are less interesting in the context of this thesis and won't be considered in the following analysis. The pro-con annotations of the speeches are used to create the relation graphs of all the politicians based on their position (pro or con) on the topics of the discussions they held speeches in. The graph shows visually how related two politicians are. If two politicians have a strong positive relationship (if they have the same attitudes in the discussions) they will be displayed close together, but if they have a strong negative relationship (mainly contrary attitudes) they will be displayed far away from each other.
 
 The nodes of this graph are the politicians and the links are the relationships between them, but to create a good network graph, we have to measure the link weight. Lucioni \cite{Lucioni_2015} used the voting data, whereas in the context of the Austrian thesis the speech annotations are used. The strength of a relationship (the link weight $w_p(p_1,p_2)$) between two politicians $p_1$ and $p_2$ is calculated via the following formula:
@@ -123,6 +124,7 @@ $$
 In this thesis politician relation graphs get built for all legislative periods, to be able to view the structure of each period separately. To achieve to get a graph for only one period, only the discussions of this period were taken into account. The nodes of such a graphs are the politicians and the links are the relations between the politicians. There exists a link between two politicians if they spoke at least once in the same discussion.
 
 \subsection{Parliamentary Club Relation Graph}
+\label{sec:club_relation_graph}
 Similar graphs can be constructed for the parliamentary clubs. These graphs show how the clubs are related to each other. The weights of the links of these graphs are computed by summing all weights of the politicians of the clubs $c_1$ and $c_2$ and normalizing the sum. This can be expressed using the following formula:
 
 $$
@@ -167,5 +169,5 @@ On the politician and club relation graph pages one can see the graph for the se
 
 
 \subsection{Relation Graphs}
-The relation graphs were visualized with the force layout graphs of the d3 library. 
+The relation graphs\footnote{See section \ref{sec:pol_relation_graph} and \ref{sec:club_relation_graph} for the creation of the graphs} were visualized with force layout graphs of the d3 JavaScript library. As Bostock \cite{d3_2011} describes in his paper about d3, the force layout is built with the an algorithm proposed by Dwyer \cite{Dwyer_2009}.
 
