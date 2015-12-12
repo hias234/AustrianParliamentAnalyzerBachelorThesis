@@ -134,6 +134,10 @@ numbers=left, numberstyle=\tiny, numbersep=5pt}
 \newcommand{\cfootnote}[1]{\stepcounter{cfootnotecounter}
 \footnote[\value{cfootnotecounter}]{#1}}
 
+\usepackage{footnote}
+\makesavenoteenv{tabular}
+\makesavenoteenv{table}
+
 \flushbottom
 
 % change page settings
