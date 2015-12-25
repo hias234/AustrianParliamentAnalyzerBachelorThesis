@@ -3,7 +3,7 @@
 
 As a result of the ETL-Application a database with structured information about the national council is available now and can be used for further purposes. This database has been used for analysis and the results got visualized via a web application which is accessible for everybody. Figure \ref{fig:start_page_prototype} shows the start page of this application. Furthermore, the relation graphs of several periods get discussed in the sections \ref{sec:relations_clubs} and \ref{sec:relations_pol}. 
 
-\begin{figure}[h]
+\begin{figure}
 	\center
 	\includegraphics[width=0.75\textwidth]{imgs/result_start_page}
 	\caption{Start Page of the Prototype Web Application}
@@ -58,7 +58,7 @@ In the current period (25.) you can see that the governing parties (Ã–VP and SPÃ
 	\label{fig:club_graphs1}
 \end{figure}
 
-\begin{table}[h]
+\begin{table}
 
 \centering
 \bgroup
@@ -90,7 +90,34 @@ In the current period (25.) you can see that the governing parties (Ã–VP and SPÃ
 
 \section{Relations of Politicians}
 \label{sec:relations_pol}
-Similar graphs to the ones in section \ref{sec:relations_clubs} were created for politicians. Figure ... shows this graphs for the legislative periods ... 
+Similar graphs to the ones in section \ref{sec:relations_clubs} were created for politicians. Figure ... shows this graphs for the legislative periods ... The closer two politicians appear together in a graph, the more positive is their relation. The politician nodes are in the color of the parliamentary club, the politician belongs to in the legislative period. The edges are colored in the color of the parliamentary club, if both nodes belong to the same club.
+
+\begin{figure}
+\center
+\begin{tabular}{ c }
+	\includegraphics[width=0.85\textwidth]{imgs/graphs/politician-graphs/horizontal/graph_25.eps}
+	\\
+	(a) 25. Period
+	\\
+	\\
+	\hline
+	\\
+	%\includegraphics[width=0.7\textwidth]{imgs/graphs/politician-graphs/horizontal/graph_24.eps}
+	%\\
+	%(b) 24. Period
+	
+	%\\
+	%\hline
+	%\\
+	\includegraphics[width=0.85\textwidth]{imgs/graphs/politician-graphs/horizontal/graph_22.eps}
+	\\
+	(b) 22. Period
+\end{tabular}
+	
+	
+	\caption{Politician Relation Graphs}
+	\label{fig:pol_graphs1}
+\end{figure}
 
 \section{Government - Opposition Relation}
 \label{sec:gov_opp_relation}
@@ -98,7 +125,7 @@ Table \ref{table:gov_opp_relation} shows the results of the measures taken for t
 
 
 
-\begin{table}[h]
+\begin{table}
 
 \centering
 \bgroup
