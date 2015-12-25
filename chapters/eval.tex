@@ -12,8 +12,8 @@ As a result of the ETL-Application a database with structured information about 
 
 \section{Relations of Parliament Clubs}
 \label{sec:relations_clubs}
-Figure \ref{fig:club_graphs1} shows the created relation graphs of the parliamentary clubs of the 25. and 22. legislative periods. The graphs visualize the relations among the clubs through the distance of the nodes. The more positive the relation between two clubs is, the closer they appear together in the graph and the thicker is the edge between them. Only positive edges are shown in the graph, as the graph would look too confusing and messy if the negative edges were also shown. In all graphs shown, one can easily see that there are always two main groups of parliamentary clubs visible in the parliament: Those which are in government and those which are in opposition. In table \ref{table:gov_opp_parties} the parties are listed per period weather they were in government or in opposition. 
-In the current period (25.) you can see that the governing parties (ÖVP and SPÖ) have a strong positive relationship and that there are only minor positive relationships between the governing parties and the NEOS party. All other parties in the opposition have negative relationships to the government.
+Figure \ref{fig:club_graphs1} shows the created relation graphs of the parliamentary clubs of the legislative periods 22 to 25. The graphs visualize the relations among the clubs through the distance of the nodes. The more positive the relation between two clubs is, the closer they appear together in the graph and the thicker is the edge between them. Only positive edges are shown in the graph, as the graph would look too confusing and messy if the negative edges were also shown. In all graphs shown, one can easily see that there are always two main groups of parliamentary clubs visible in the parliament: Those which are in government and those which are in opposition. In table \ref{table:gov_opp_parties} the parties are listed per period weather they were in government or in opposition. 
+In the current period (25.) you can see that the governing parties (ÖVP and SPÖ) have a strong positive relationship and that there are only minor positive relationships between the governing parties and the NEOS party. All other parties in the opposition have negative relationships to the government. In period 22, a similar structure is visible, but in this period the government consists of ÖVP, FPÖ and BZÖ. This shows that the distinctness of government and opposition does not depend on the composition of the parties. 
 
 \begin{figure}
 %\begin{tabular}{ c  c }
@@ -26,35 +26,33 @@ In the current period (25.) you can see that the governing parties (ÖVP and SP�
 %	& (c) 22.Period
 %\end{tabular}
 	\center
-	\begin{tabular}{ c }
-		\includegraphics[width=0.49\textwidth]{imgs/graphs/club-graphs/horizontal/graph_25.eps}
+	\setlength{\tabcolsep}{.26667em}
+	\begin{tabular}{ c | c }
+		\includegraphics[width=0.48\textwidth]{imgs/graphs/club-graphs/horizontal/graph_25.eps}
+		&
+		\includegraphics[width=0.48\textwidth]{imgs/graphs/club-graphs/horizontal/graph_24.eps}
 		\\
-		(a) 25. period - on $25^{th}$ of December, 2015
-		\\
-		\\
-		\hline
-		\\
-		\\
-		\includegraphics[width=0.7\textwidth]{imgs/graphs/club-graphs/horizontal/graph_24.eps}
-		\\
+		(a) 25. period
+		&
 		(b) 24. period
+		
 		\\
 		\\
 		\hline
 		\\
-		\\
-		\includegraphics[width=0.55\textwidth]{imgs/graphs/club-graphs/horizontal/graph_23.eps}
+		\includegraphics[width=0.48\textwidth]{imgs/graphs/club-graphs/horizontal/graph_23.eps}
+		&
+		\includegraphics[width=0.48\textwidth]{imgs/graphs/club-graphs/horizontal/graph_22.eps}
 		\\
 		(c) 23. period
-		%\\
-		%\\
-		%\\
-		%\includegraphics[width=0.6\textwidth]{imgs/graphs/club-graphs/horizontal/graph_22.eps}
-		%\\
-		%(c) 22. period
+		&
+		(d) 22. period
+		\\
+		\\
+				
 		
 	\end{tabular}
-	
+	\todo{soll ich da auch noch 21. und 20. periode reingeben?}
 
 	\caption{Club Relation Graphs}
 	\label{fig:club_graphs1}
