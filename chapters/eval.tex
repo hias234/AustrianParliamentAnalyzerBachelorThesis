@@ -1,17 +1,19 @@
 \chapter{Results and Discussion}
 \label{chap:evaluation}
 
-A web application was developed which shows the results of the analysis applied on the data which got extracted and makes them accessible for everybody. Figure \ref{fig:start_page_prototype} shows the start page of this application.
+As a result of the ETL-Application a database with structured information about the national council is available now and can be used for further purposes. This database has been used for analysis and the results got visualized via a web application which is accessible for everybody. Figure \ref{fig:start_page_prototype} shows the start page of this application. Furthermore, the relation graphs of several periods get discussed in the sections \ref{sec:relations_clubs} and \ref{sec:relations_pol}. 
 
 \begin{figure}[h]
-	\includegraphics[width=\textwidth]{imgs/result_start_page}
+	\center
+	\includegraphics[width=0.75\textwidth]{imgs/result_start_page}
 	\caption{Start Page of the Prototype Web Application}
 	\label{fig:start_page_prototype}
 \end{figure}
 
 \section{Relations of Parliament Clubs}
 \label{sec:relations_clubs}
-Figure \ref{fig:club_graphs1} shows the created relation graphs of the 25. and 22. legislative periods. The more positive the relation between two clubs is, the closer they appear together in the graph and the thicker is the edge between them. Only positive edges are shown in the graph, as the graph would be too confusing if the negative edges were also shown. In all graphs shown, one can easily see that there are two groups of parliamentary clubs in the parliament: Those which are in government and those which are in opposition. In table \ref{table:gov_opp_parties} the parties are listed per period weather they were in government or in opposition.
+Figure \ref{fig:club_graphs1} shows the created relation graphs of the parliamentary clubs of the 25. and 22. legislative periods. The graphs visualize the relations among the clubs through the distance of the nodes. The more positive the relation between two clubs is, the closer they appear together in the graph and the thicker is the edge between them. Only positive edges are shown in the graph, as the graph would look too confusing and messy if the negative edges were also shown. In all graphs shown, one can easily see that there are always two main groups of parliamentary clubs visible in the parliament: Those which are in government and those which are in opposition. In table \ref{table:gov_opp_parties} the parties are listed per period weather they were in government or in opposition. 
+In the current period (25.) you can see that the governing parties (ÖVP and SPÖ) have a strong positive relationship and that there are only minor positive relationships between the governing parties and the NEOS party. All other parties in the opposition have negative relationships to the government.
 
 \begin{figure}
 \begin{tabular}{ c  c }
@@ -58,11 +60,12 @@ Figure \ref{fig:club_graphs1} shows the created relation graphs of the 25. and 2
 
 
 \section{Relations of Politicians}
-Graph + Explanations
+\label{sec:relations_pol}
+Similar graphs to the ones in section \ref{sec:relations_clubs} were created for politicians. Figure ... shows this graphs for the legislative periods ... 
 
 \section{Government - Opposition Relation}
 \label{sec:gov_opp_relation}
-
+Table \ref{table:gov_opp_relation} shows the results of the measures taken for the government-opposition relation, inner government cohesion and inner opposition cohesion. The values show basically that the two main groups in the parliament - the government and opposition - are highly distinct. The government-opposition relation is negative in every discussed period. This means that there is an overall tendency of politicians in government and opposition to have a different opinion. The values differ in the periods, the 20. period shows a the most negative value with $-0.85$. This means that only in $7.5$\% of the speeches a politician in government and opposition had the same opinion on a certain topic, in all other speeches they had contrary ones. In the current period, this inter relationship value is still negative, but it is a lot less negative. The relation coefficient is $-0.374$ which means that in $31.3$\% of the speeches government and opposition have the same opinion.
 
 \begin{table}[h]
 
@@ -71,7 +74,7 @@ Graph + Explanations
 \def\arraystretch{1.2}
 \begin{tabular}{| p{2cm} | p{3cm} | p{3cm} | p{3cm} |}
 \hline
-  Legislative Period & Government-Opposition Relation & Inner Government Relation & Inner Opposition Relation \\
+  Legislative Period & Government-Opposition Relation & Inner-Government Cohesion & Inner-Opposition Cohesion \\
 \hline
 \hline
   20. Period & -0.85 & +1.00 & +0.86 \\
