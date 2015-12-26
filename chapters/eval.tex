@@ -5,7 +5,7 @@
 
 As a result of the ETL-Application a database with structured information about the national council is now available and can be used for further purposes. This database has been used for analysis and the results got visualized via a web application which is accessible for everybody. Figure \ref{fig:start_page_prototype} shows the start page of this application. Furthermore, the relation graphs of several periods get discussed in the sections \ref{sec:relations_clubs} and \ref{sec:relations_pol}. 
 
-\begin{figure}
+\begin{figure}[h]
 	\center
 	\includegraphics[width=0.75\textwidth]{imgs/result_start_page}
 	\caption{Start Page of the Prototype Web Application}
@@ -15,7 +15,7 @@ As a result of the ETL-Application a database with structured information about 
 \section{Simple Analysis Results}
 Table \ref{tab:simple_analysis_results} shows the results of some of the simple analysis measures, described in section \ref{sec:analysis}. The overall absence shows how often politician were absent during a certain period. Furthermore the table shows the most absent club and the most active politician for each discussed period (political activity is defined as how often a politician spoke in a discussion during a certain legislative period).
 
-\begin{table}
+\begin{table}[h]
 
 \centering
 \bgroup
@@ -164,7 +164,7 @@ Table \ref{table:gov_opp_relation} shows the results of the measures taken for t
 
 The inner-government cohesion shows how homogeneous the attitudes of all politicians in government is. In all analyzed legislative periods, the cohesion is almost $+1.00$ which means that almost all politicians had the same opinions on all topics spoken in. Analogously to the inner-government cohesion the inner-opposition cohesion shows the cohesion within the opposition and how homogeneous their attitudes were. The resulting cohesion values were more interesting because they varied in the analyzed periods. The values were in the range of $+0.938$ to $+0.676$. In the period, with the highest inner opposition cohesion (period 22), in 96.6\% of the speeches the politicians in opposition had the same opinion. In the current period, the opposition cohesion coefficient is $+0.676$. This means that 83.8\% of the politicians in opposition had the same attitudes on the discussions they spoke in.
 
-There is a general tendency visible that the inner-opposition cohesion decreased over the last legislative periods and the government-opposition relation became less and less negative. This could be caused by a more diverse parliament - in the recent periods there were more different clubs in opposition. Obviously, this leads to a lower inner-opposition cohesion. For example, if there would be only one party in opposition, the cohesion would be virtually 1.00, but if there would be a lot more, the cohesion would decrease dramatically.
+There is a general tendency visible that the inner-opposition cohesion decreased over the last legislative periods and the government-opposition relation became less and less negative (see figure \ref{fig:gov_opp_relation}). This could be caused by a more diverse parliament - in the recent periods there were more different clubs in opposition. Obviously, this leads to a lower inner-opposition cohesion. For example, if there would be only one party in opposition, the cohesion would be virtually 1.00, but if there would be a lot more, the cohesion would decrease dramatically.
 
 \begin{table}
 
