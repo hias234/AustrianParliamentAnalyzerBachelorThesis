@@ -245,7 +245,7 @@
        id="circle76"
        cx="0"
        cy="0" /><text
-       style="font-size:12px;font-family:Arial;fill:#555555"
+       style="font-size:18px;font-family:Arial;fill:#555555"
        id="text78" />
 </g><g
      class="anchorNode"
@@ -257,7 +257,7 @@
        cx="0"
        cy="0" /><text
        transform="translate(-32.60428,5)"
-       style="font-size:12px;font-family:Arial;fill:#555555"
+       style="font-size:18px;font-family:Arial;fill:#555555"
        id="text84">GRÜNE</text>
 </g><g
      class="anchorNode"
@@ -268,7 +268,7 @@
        id="circle88"
        cx="0"
        cy="0" /><text
-       style="font-size:12px;font-family:Arial;fill:#555555"
+       style="font-size:18px;font-family:Arial;fill:#555555"
        id="text90" />
 </g><g
      class="anchorNode"
@@ -280,7 +280,7 @@
        cx="0"
        cy="0" /><text
        transform="translate(-3.5633682,5)"
-       style="font-size:12px;font-family:Arial;fill:#555555"
+       style="font-size:18px;font-family:Arial;fill:#555555"
        id="text96">SPÖ</text>
 </g><g
      class="anchorNode"
@@ -291,7 +291,7 @@
        id="circle100"
        cx="0"
        cy="0" /><text
-       style="font-size:12px;font-family:Arial;fill:#555555"
+       style="font-size:18px;font-family:Arial;fill:#555555"
        id="text102" />
 </g><g
      class="anchorNode"
@@ -303,7 +303,7 @@
        cx="0"
        cy="0" /><text
        transform="translate(-12.781758,5)"
-       style="font-size:12px;font-family:Arial;fill:#555555"
+       style="font-size:18px;font-family:Arial;fill:#555555"
        id="text108">NEOS-LIF</text>
 </g><g
      class="anchorNode"
@@ -314,7 +314,7 @@
        id="circle112"
        cx="0"
        cy="0" /><text
-       style="font-size:12px;font-family:Arial;fill:#555555"
+       style="font-size:18px;font-family:Arial;fill:#555555"
        id="text114" />
 </g><g
      class="anchorNode"
@@ -326,7 +326,7 @@
        cx="0"
        cy="0" /><text
        transform="translate(-23.513377,5)"
-       style="font-size:12px;font-family:Arial;fill:#555555"
+       style="font-size:18px;font-family:Arial;fill:#555555"
        id="text120">FPÖ</text>
 </g><g
      class="anchorNode"
@@ -337,7 +337,7 @@
        id="circle124"
        cx="0"
        cy="0" /><text
-       style="font-size:12px;font-family:Arial;fill:#555555"
+       style="font-size:18px;font-family:Arial;fill:#555555"
        id="text126" />
 </g><g
      class="anchorNode"
@@ -349,7 +349,7 @@
        cx="0"
        cy="0" /><text
        transform="translate(-8.1169276,5)"
-       style="font-size:12px;font-family:Arial;fill:#555555"
+       style="font-size:18px;font-family:Arial;fill:#555555"
        id="text132">ÖVP</text>
 </g><g
      class="anchorNode"
@@ -360,7 +360,7 @@
        id="circle136"
        cx="0"
        cy="0" /><text
-       style="font-size:12px;font-family:Arial;fill:#555555"
+       style="font-size:18px;font-family:Arial;fill:#555555"
        id="text138" />
 </g><g
      class="anchorNode"
@@ -372,7 +372,7 @@
        cx="0"
        cy="0" /><text
        transform="translate(-54.068969,5)"
-       style="font-size:12px;font-family:Arial;fill:#555555"
+       style="font-size:18px;font-family:Arial;fill:#555555"
        id="text144">STRONACH</text>
 </g><g
      class="anchorNode"
@@ -383,7 +383,7 @@
        id="circle148"
        cx="0"
        cy="0" /><text
-       style="font-size:12px;font-family:Arial;fill:#555555"
+       style="font-size:18px;font-family:Arial;fill:#555555"
        id="text150" />
 </g><g
      class="anchorNode"
@@ -395,6 +395,6 @@
        cx="0"
        cy="0" /><text
        transform="translate(-9.4298884,5)"
-       style="font-size:12px;font-family:Arial;fill:#555555"
+       style="font-size:18px;font-family:Arial;fill:#555555"
        id="text156">NEOS</text>
 </g></svg>

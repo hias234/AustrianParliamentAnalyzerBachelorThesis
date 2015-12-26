@@ -201,7 +201,7 @@
        r="0"
        style="fill: rgb(255, 255, 255);"
        id="circle62" /><text
-       style="fill: rgb(85, 85, 85); font-family: Arial; font-size: 12px;"
+       style="fill: rgb(85, 85, 85); font-family: Arial; font-size:18px;"
        id="text64" />
 </g><g
      class="anchorNode"
@@ -211,7 +211,7 @@
        style="fill: rgb(255, 255, 255);"
        id="circle68" /><text
        transform="translate(-39.22563440288673,5)"
-       style="fill: rgb(85, 85, 85); font-family: Arial; font-size: 12px;"
+       style="fill: rgb(85, 85, 85); font-family: Arial; font-size:18px;"
        id="text70">GRÜNE</text>
 </g><g
      class="anchorNode"
@@ -220,7 +220,7 @@
        r="0"
        style="fill: rgb(255, 255, 255);"
        id="circle74" /><text
-       style="fill: rgb(85, 85, 85); font-family: Arial; font-size: 12px;"
+       style="fill: rgb(85, 85, 85); font-family: Arial; font-size:18px;"
        id="text76" />
 </g><g
      class="anchorNode"
@@ -230,7 +230,7 @@
        style="fill: rgb(255, 255, 255);"
        id="circle80" /><text
        transform="translate(-78.50080630095978,5)"
-       style="fill: rgb(85, 85, 85); font-family: Arial; font-size: 12px;"
+       style="fill: rgb(85, 85, 85); font-family: Arial; font-size:18px;"
        id="text82">ohne Klubzugehörigkeit</text>
 </g><g
      class="anchorNode"
@@ -239,7 +239,7 @@
        r="0"
        style="fill: rgb(255, 255, 255);"
        id="circle86" /><text
-       style="fill: rgb(85, 85, 85); font-family: Arial; font-size: 12px;"
+       style="fill: rgb(85, 85, 85); font-family: Arial; font-size:18px;"
        id="text88" />
 </g><g
      class="anchorNode"
@@ -249,7 +249,7 @@
        style="fill: rgb(255, 255, 255);"
        id="circle92" /><text
        transform="translate(-1.0228869816496093,5)"
-       style="fill: rgb(85, 85, 85); font-family: Arial; font-size: 12px;"
+       style="fill: rgb(85, 85, 85); font-family: Arial; font-size:18px;"
        id="text94">SPÖ</text>
 </g><g
      class="anchorNode"
@@ -258,7 +258,7 @@
        r="0"
        style="fill: rgb(255, 255, 255);"
        id="circle98" /><text
-       style="fill: rgb(85, 85, 85); font-family: Arial; font-size: 12px;"
+       style="fill: rgb(85, 85, 85); font-family: Arial; font-size:18px;"
        id="text100" />
 </g><g
      class="anchorNode"
@@ -268,7 +268,7 @@
        style="fill: rgb(255, 255, 255);"
        id="circle104" /><text
        transform="translate(-22.4850719418748,5)"
-       style="fill: rgb(85, 85, 85); font-family: Arial; font-size: 12px;"
+       style="fill: rgb(85, 85, 85); font-family: Arial; font-size:18px;"
        id="text106">FPÖ</text>
 </g><g
      class="anchorNode"
@@ -277,7 +277,7 @@
        r="0"
        style="fill: rgb(255, 255, 255);"
        id="circle110" /><text
-       style="fill: rgb(85, 85, 85); font-family: Arial; font-size: 12px;"
+       style="fill: rgb(85, 85, 85); font-family: Arial; font-size:18px;"
        id="text112" />
 </g><g
      class="anchorNode"
@@ -287,7 +287,7 @@
        style="fill: rgb(255, 255, 255);"
        id="circle116" /><text
        transform="translate(-6.838663974151475,5)"
-       style="fill: rgb(85, 85, 85); font-family: Arial; font-size: 12px;"
+       style="fill: rgb(85, 85, 85); font-family: Arial; font-size:18px;"
        id="text118">BZÖ</text>
 </g><g
      class="anchorNode"
@@ -296,7 +296,7 @@
        r="0"
        style="fill: rgb(255, 255, 255);"
        id="circle122" /><text
-       style="fill: rgb(85, 85, 85); font-family: Arial; font-size: 12px;"
+       style="fill: rgb(85, 85, 85); font-family: Arial; font-size:18px;"
        id="text124" />
 </g><g
      class="anchorNode"
@@ -306,6 +306,6 @@
        style="fill: rgb(255, 255, 255);"
        id="circle128" /><text
        transform="translate(-3.3686258643772735,5)"
-       style="fill: rgb(85, 85, 85); font-family: Arial; font-size: 12px;"
+       style="fill: rgb(85, 85, 85); font-family: Arial; font-size:18px;"
        id="text130">ÖVP</text>
 </g></svg>

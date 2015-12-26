@@ -163,7 +163,7 @@
        cx="0"
        cy="0" /><text
        transform="translate(-0.34575836,5)"
-       style="font-size:12px;font-family:Arial;fill:#555555"
+       style="font-size:18px;font-family:Arial;fill:#555555"
        id="text54">F</text>
 </g><g
      class="anchorNode"
@@ -184,7 +184,7 @@
        cx="0"
        cy="0" /><text
        transform="translate(-42.278315,5)"
-       style="font-size:12px;font-family:Arial;fill:#555555"
+       style="font-size:18px;font-family:Arial;fill:#555555"
        id="text66">GRÜNE</text>
 </g><g
      class="anchorNode"
@@ -205,7 +205,7 @@
        cx="0"
        cy="0" /><text
        transform="translate(-33.048826,5)"
-       style="font-size:12px;font-family:Arial;fill:#555555"
+       style="font-size:18px;font-family:Arial;fill:#555555"
        id="text78">F-BZÖ</text>
 </g><g
      class="anchorNode"
@@ -226,7 +226,7 @@
        cx="0"
        cy="0" /><text
        transform="translate(-9.4958274,5)"
-       style="font-size:12px;font-family:Arial;fill:#555555"
+       style="font-size:18px;font-family:Arial;fill:#555555"
        id="text90">SPÖ</text>
 </g><g
      class="anchorNode"
@@ -247,6 +247,6 @@
        cx="0"
        cy="0" /><text
        transform="translate(-24.876142,5)"
-       style="font-size:12px;font-family:Arial;fill:#555555"
+       style="font-size:18px;font-family:Arial;fill:#555555"
        id="text102">ÖVP</text>
 </g></svg>
