@@ -14,7 +14,7 @@ As a result of the ETL-Application a database with structured information about 
 
 \section{Simple Analysis Results}
 \label{sec:simple_analysis_res}
-Table \ref{tab:simple_analysis_results} shows the results of some of the simple analysis measures, described in section \ref{sec:analysis}. The overall absence shows how often politicians were absent during a certain period. Furthermore the table shows the most absent club and the most active politician for each discussed period (political activity is defined as how often a politician spoke in a discussion during a certain legislative period). Another fact which can be derived by the table is that the overall tendency increased over the last 6 periods from 2.8\% to 4.2\%.
+Table \ref{tab:simple_analysis_results} shows the results of some of the simple analysis measures, described in section \ref{sec:analysis}. The overall absence shows how often politicians were absent during a certain period. Furthermore the table shows the most absent club and the most active politician for each discussed period (political activity is defined as how often a politician spoke in a discussion during a certain legislative period). Another fact which can be derived by the table is that the overall tendency increased steadily over the last six periods from 2.8\% to 4.2\%.
 
 \begin{table}[h]
 
@@ -51,7 +51,7 @@ Table \ref{tab:simple_analysis_results} shows the results of some of the simple 
 Figure \ref{fig:club_graphs1} shows the created relation graphs of the parliamentary clubs for the legislative periods 22 to 25. The graphs visualize the relations among the clubs through the distance between the nodes. The more positive the relation between two clubs is, the closer they appear together in the graph and the thicker is the edge between them. To improve the visual appearance, only positive edges are shown in the graph, as the graph would look too confusing and messy if the negative edges were also shown. 
 
 In all graphs shown, one can easily see that there are always two main groups of parliamentary clubs visible in the parliament: Those which are in government and those which are in opposition. In table \ref{table:gov_opp_parties} the parties are listed per period weather they were in government or in opposition. 
-In the current period (25.) you can see that the governing parties (ÖVP and SPÖ) have a strong positive relationship and that there are only minor positive relationships between the governing parties and the NEOS party. All other parties in the opposition have negative relationships to the government. The graphs of the 24. and 23. period have a similar structure. In the 24. period, there are even only negative relationships between government and opposition. In period 22, the government consisted of ÖVP, FPÖ and BZÖ and there are again two groups of clubs in the graph, which are highly separated. This shows that the distinctness of government and opposition does not depend on the composition of the parties which are in government or opposition. No matter which clubs are in government, the clubs which are in opposition are always in a contrary position to them.
+In the current period (25.) you can see that the governing parties (ÖVP and SPÖ) have a strong positive relationship and that there are only minor positive relationships between the governing parties and the NEOS party. All other parties in the opposition have negative relationships to the government. The FPÖ has the strongest negative relationship to the government, as the distance to ÖVP and SPÖ is the greatest among all clubs. The graphs of the 24. and 23. period have a similar structure. In the 24. period, there are even only negative relationships between government and opposition. In period 22, the government consisted of ÖVP, FPÖ and BZÖ and there are again two groups of clubs in the graph, which are highly separated. This shows that the distinctness of government and opposition does not depend on the composition of the parties which are in government or opposition. No matter which clubs are in government, the clubs which are in opposition are always in a contrary position to them.
 
 \begin{figure}
 %\begin{tabular}{ c  c }
@@ -128,9 +128,11 @@ In the current period (25.) you can see that the governing parties (ÖVP and SP�
 
 \section{Relations of Politicians}
 \label{sec:relations_pol}
-Similar graphs to the ones of the clubs in section \ref{sec:relations_clubs} were created for politicians. Figure \ref{fig:pol_graphs1} shows these graphs which have nodes for each active politician. The closer two politicians appear together in a graph, the more positive is their relation. The politician nodes are in the color of the parliamentary club, the politician belongs to in the corresponding legislative period. The edges are colored in the color of the parliamentary club, if both politicians belong to the same club.
+Similar graphs to the ones of the clubs in section \ref{sec:relations_clubs} were created for politicians. Figure \ref{fig:pol_graphs1} shows these graphs which have nodes for each politician who spoke at least once during a legislative period. The closer two politicians appear together in a graph, the more positive is their relationship. The politician nodes are in the color of the parliamentary club, the politician belongs to in the corresponding legislative period. The edges are colored in the color of the parliamentary club, if both politicians which are connected belong to the same club.
 
-In the resulting graphs it is again visible that the government and the opposition are two distinct groups. In the 25. period ÖVP (black) and SPÖ (red) are in government whereas in the 22. period ÖVP (black), FPÖ (blue) and BZÖ (orange) are in government. In both periods government and opposition can be visually separated. Also within government and opposition the politicians of the same club are displayed closely together. This effect is bigger in the opposition as the inner cohesion in the government is higher\footnote{see section \ref{fig:gov_opp_relation}}.
+In the resulting graphs it is again visible that government and opposition are always two distinct groups. In the 25. period, ÖVP (black) and SPÖ (red) are in government whereas in the 22. period ÖVP (black), FPÖ (blue) and BZÖ (orange) are in government. In both periods government and opposition can be visually separated. Also within government and opposition the politicians of the same club are displayed closely together. This effect is bigger in the opposition as the inner cohesion in the government is higher\footnote{see section \ref{fig:gov_opp_relation}}.
+
+\todo{soll ich da noch mehr graphen reingeben (oder in den Anhang?) und soll ich noch genauer die einzelnen Legislaturperioden beschreiben?}
 
 \begin{figure}
 \center
@@ -157,6 +159,17 @@ In the resulting graphs it is again visible that the government and the oppositi
 	
 	\caption{Politician Relation Graphs}
 	\label{fig:pol_graphs1}
+\end{figure}
+
+\section{Relation Graphs based on a Specific Topic}
+The implemented prototype also gives the possibility to create politician relation graphs based on a specific topic. For example, figure \ref{fig:pol_graph_tax} shows the politician relation graph of the 25. period for tax politics (only the discussions which have the word "steuer" - german for tax - in it will be used to calculate the relation weights). 
+
+\begin{figure}
+\center
+	\includegraphics[width=\textwidth]{imgs/graphs/graph_25_tax.eps}
+	
+	\caption{Politician Relation Graph for Tax Politics in Period 25}
+	\label{fig:pol_graph_tax}
 \end{figure}
 
 \section{Government - Opposition Relation}
