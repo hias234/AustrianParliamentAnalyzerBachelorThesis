@@ -125,8 +125,9 @@ $$w_p(d_i,p_1,p_2) =
 \end{cases}
 $$
 
-\todo{sprachlich holprig}
-In this thesis politician relation graphs get built for all legislative periods, to be able to view the structure of each period separately. To achieve to get a graph for only one period, only the discussions of this period were taken into account. There also has to be considered that there exists an edge between two politicians only if they spoke at least once in the same discussion.
+%\todo{sprachlich holprig}
+
+%Politician relation graphs get built for all legislative periods separately, to be able to view the structure of each period. To achieve to get a graph for only one period, only the discussions of this period were taken into account. There also has to be considered that there exists an edge between two politicians only if they spoke at least once in the same discussion.
 
 \subsection{Parliamentary Club Relation Graph}
 \label{sec:club_relation_graph}
@@ -146,8 +147,17 @@ The result $w_c(c_1,c_2)$ is again a normalized number from $-1$ to $+1$ and des
 The calculation of all weights for the relations is quite expensive, as there are $\frac{n * (n - 1)}{2}$ weights which have to be calculated for every discussion (n is the number of politicians which spoke in the discussion). So, if a graph should be displayed, it would take too long to compute all these weights then. To handle this issue, all politician relation weights $w_p(d_i,p_1,p_2)$ are calculated and persisted into the database immediately after new data is available (after the loading step of the ETL Application). When the data is needed to show the graph the database gets queried and using the aggregation functions of the database $w_p(p_1,p_2)$ and $w_c(c_1,c_2)$ can be easily derived for each pair of politicians and parliamentary clubs in an arbitrary period of time.
 
 \subsection{Other Analysis with the Relation Weights}
-With the now available weights between the politicians and parliamentary clubs also analysis other than the relation graphs can be applied. By summing and normalizing all the weights where one politician is in government and the other one is in opposition, a general tendency on how distinct government and opposition are can be calculated. See the results in section \ref{sec:gov_opp_relation}.
+With the now available weights between the politicians and parliamentary clubs also analysis other than the relation graphs can be applied. By summing and normalizing all the weights where one politician is in government and the other one is in opposition, a general tendency on how distinct government and opposition are can be calculated. See the results in section \ref{sec:gov_opp_relation}. The following formula formally describes the calculation:
+
+$$
+w_{op}(period) = \frac{\displaystyle\sum_{i=0}^{D} \displaystyle\sum_{g=0}^{P_{gov}} \displaystyle\sum_{o=0}^{P_{opp}} w_p(d_i;p_{gov,g};p_{opp,o})}{\displaystyle\sum_{i=0}^{D} \displaystyle\sum_{g=0}^{P_{gov}} \displaystyle\sum_{o=0}^{P_{opp}} |w_p(d_i;p_{gov,g};p_{opp,o})|}
+$$
+
+$w_{op}$ is the resulting weight in the range of $-1$ to $+1$. $D$ is the count of the discussions and $P_{gov}$ and $P_{opp}$ are the counts of the politicians in government and opposition, respectively. $p_{gov,g}$ is the $g^{th}$ politician in government and $p_{opp,o}$ the $o^{th}$ in opposition.
+
 Furthermore, the inner cohesion of government and coalition can be calculated by summing and normalizing all weights of politicians within these two groups. Another measure which can be taken out of the relation weights is the affinity of a politician to a certain party by again summing and normalizing all the weights of the politician and all the politicians of the party. Also the most and least related politicians of one selected politician can be derived by sorting all the calculated weights $w_p(p_1,p_2)$.
+
+
 
 \todo{soll ich hier auch formeln dazu angeben? würden halt alle ca so aussehen wie die von den Parlamentsklubs}
 
