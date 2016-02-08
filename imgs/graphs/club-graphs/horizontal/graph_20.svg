@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 500 700"
+   enable-background="new 0 0 1170 1000"
+   xml:space="preserve"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="graph_22.svg"
+   width="500"
+   height="700"><metadata
+     id="metadata159"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs157" /><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1536"
+     inkscape:window-height="801"
+     id="namedview155"
+     showgrid="false"
+     inkscape:zoom="0.472"
+     inkscape:cx="692.26818"
+     inkscape:cy="558.91779"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1"
+     width="500px" /><line class="link" stroke-width="1px" style="stroke: rgb(124, 124, 124); opacity: 0;" x1="100.1540981217145" y1="492.02021332310557" x2="859.0554878138917" y2="540.1556499329536"></line><line class="link" stroke-width="4.986741102581996px" style="stroke: rgb(124, 124, 124); opacity: 0.4;" x1="790.3464136182422" y1="434.9245170520427" x2="789.054382831987" y2="512.066497654926"></line><line class="link" stroke-width="4.860291734197731px" style="stroke: rgb(124, 124, 124); opacity: 0.4;" x1="789.054382831987" y1="512.066497654926" x2="859.0554878138917" y2="540.1556499329536"></line><line class="link" stroke-width="1px" style="stroke: rgb(124, 124, 124); opacity: 0;" x1="789.054382831987" y1="512.066497654926" x2="103.4610191613962" y2="559.7665046894549"></line><line class="link" stroke-width="6px" style="stroke: rgb(124, 124, 124); opacity: 0.4;" x1="790.3464136182422" y1="434.9245170520427" x2="860.415202873567" y2="472.07373231480756"></line><line class="link" stroke-width="1px" style="stroke: rgb(124, 124, 124); opacity: 0;" x1="859.0554878138917" y1="540.1556499329536" x2="103.4610191613962" y2="559.7665046894549"></line><line class="link" stroke-width="1px" style="stroke: rgb(124, 124, 124); opacity: 0;" x1="790.3464136182422" y1="434.9245170520427" x2="100.1540981217145" y2="492.02021332310557"></line><line class="link" stroke-width="6px" style="stroke: rgb(124, 124, 124); opacity: 0.4;" x1="860.415202873567" y1="472.07373231480756" x2="859.0554878138917" y2="540.1556499329536"></line><line class="link" stroke-width="1px" style="stroke: rgb(124, 124, 124); opacity: 0;" x1="860.415202873567" y1="472.07373231480756" x2="103.4610191613962" y2="559.7665046894549"></line><line class="link" stroke-width="1px" style="stroke: rgb(124, 124, 124); opacity: 0;" x1="100.1540981217145" y1="492.02021332310557" x2="789.054382831987" y2="512.066497654926"></line><line class="link" stroke-width="1px" style="stroke: rgb(124, 124, 124); opacity: 0;" x1="100.1540981217145" y1="492.02021332310557" x2="860.415202873567" y2="472.07373231480756"></line><line class="link" stroke-width="1px" style="stroke: rgb(124, 124, 124); opacity: 0;" x1="103.4610191613962" y1="559.7665046894549" x2="790.3464136182422" y2="434.9245170520427"></line><line class="link" stroke-width="4.5957825957825955px" style="stroke: rgb(124, 124, 124); opacity: 0.4;" x1="859.0554878138917" y1="540.1556499329536" x2="790.3464136182422" y2="434.9245170520427"></line><line class="link" stroke-width="6px" style="stroke: rgb(124, 124, 124); opacity: 0.4;" x1="103.4610191613962" y1="559.7665046894549" x2="100.1540981217145" y2="492.02021332310557"></line><line class="link" stroke-width="6px" style="stroke: rgb(124, 124, 124); opacity: 0.4;" x1="789.054382831987" y1="512.066497654926" x2="860.415202873567" y2="472.07373231480756"></line><g class="node" transform="translate(859.0554878138917,540.1556499329536)"><circle r="6" style="stroke: rgb(255, 255, 255); stroke-width: 3px; fill: rgb(0, 0, 255);"></circle></g><g class="node" transform="translate(789.054382831987,512.066497654926)"><circle r="6" style="stroke: rgb(255, 255, 255); stroke-width: 3px; fill: rgb(0, 255, 0);"></circle></g><g class="node" transform="translate(860.415202873567,472.07373231480756)"><circle r="6" style="stroke: rgb(255, 255, 255); stroke-width: 3px; fill: rgb(204, 204, 204);"></circle></g><g class="node" transform="translate(100.1540981217145,492.02021332310557)"><circle r="6" style="stroke: rgb(255, 255, 255); stroke-width: 3px; fill: rgb(255, 0, 0);"></circle></g><g class="node" transform="translate(790.3464136182422,434.9245170520427)"><circle r="6" style="stroke: rgb(255, 255, 255); stroke-width: 3px; fill: rgb(204, 204, 204);"></circle></g><g class="node" transform="translate(103.4610191613962,559.7665046894549)"><circle r="6" style="stroke: rgb(255, 255, 255); stroke-width: 3px; fill: rgb(0, 0, 0);"></circle></g><g class="anchorNode" transform="translate(859.0554878138917,540.1556499329536)"><circle r="0" style="fill: rgb(255, 255, 255);"></circle><text style="fill: rgb(85, 85, 85); font-family: Arial; font-size: 24px;"></text></g><g class="anchorNode" transform="translate(865.591257397829,549.1017479642433)"><circle r="0" style="fill: rgb(255, 255, 255);"></circle><text transform="translate(-1.435305137258896,5)" style="fill: rgb(85, 85, 85); font-family: Arial; font-size: 24px;">F</text></g><g class="anchorNode" transform="translate(789.054382831987,512.066497654926)"><circle r="0" style="fill: rgb(255, 255, 255);"></circle><text style="fill: rgb(85, 85, 85); font-family: Arial; font-size: 24px;"></text></g><g class="anchorNode" transform="translate(780.1370771041181,518.3567831663905)"><circle r="0" style="fill: rgb(255, 255, 255);"></circle><text transform="translate(-39.977360309094934,5)" style="fill: rgb(85, 85, 85); font-family: Arial; font-size: 24px;">GRÜNE</text></g><g class="anchorNode" transform="translate(860.415202873567,472.07373231480756)"><circle r="0" style="fill: rgb(255, 255, 255);"></circle><text style="fill: rgb(85, 85, 85); font-family: Arial; font-size: 24px;"></text></g><g class="anchorNode" transform="translate(869.8927434392458,466.46586954145954)"><circle r="0" style="fill: rgb(255, 255, 255);"></circle><text transform="translate(-9.059168476204123,5)" style="fill: rgb(85, 85, 85); font-family: Arial; font-size: 24px;">ohne Klubzugehörigkeit</text></g><g class="anchorNode" transform="translate(100.1540981217145,492.02021332310557)"><circle r="0" style="fill: rgb(255, 255, 255);"></circle><text style="fill: rgb(85, 85, 85); font-family: Arial; font-size: 24px;"></text></g><g class="anchorNode" transform="translate(95.39994881999432,482.4088119072737)"><circle r="0" style="fill: rgb(255, 255, 255);"></circle><text transform="translate(-18.042042349926,5)" style="fill: rgb(85, 85, 85); font-family: Arial; font-size: 24px;">SPÖ</text></g><g class="anchorNode" transform="translate(790.3464136182422,434.9245170520427)"><circle r="0" style="fill: rgb(255, 255, 255);"></circle><text style="fill: rgb(85, 85, 85); font-family: Arial; font-size: 24px;"></text></g><g class="anchorNode" transform="translate(785.6891232070725,424.9643596156306)"><circle r="0" style="fill: rgb(255, 255, 255);"></circle><text transform="translate(-4.982507954960369,5)" style="fill: rgb(85, 85, 85); font-family: Arial; font-size: 24px;">L</text></g><g class="anchorNode" transform="translate(103.4610191613962,559.7665046894549)"><circle r="0" style="fill: rgb(255, 255, 255);"></circle><text style="fill: rgb(85, 85, 85); font-family: Arial; font-size: 24px;"></text></g><g class="anchorNode" transform="translate(99.73034948233229,569.8221022937047)"><circle r="0" style="fill: rgb(255, 255, 255);"></circle><text transform="translate(-16.847961618687787,5)" style="fill: rgb(85, 85, 85); font-family: Arial; font-size: 24px;">ÖVP</text></g></svg>

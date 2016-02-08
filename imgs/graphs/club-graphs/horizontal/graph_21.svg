@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 500 700"
+   enable-background="new 0 0 1170 1000"
+   xml:space="preserve"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="graph_21.svg"
+   width="500"
+   height="700"><metadata
+     id="metadata159"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs157" /><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1536"
+     inkscape:window-height="801"
+     id="namedview155"
+     showgrid="false"
+     inkscape:zoom="0.472"
+     inkscape:cx="692.26818"
+     inkscape:cy="558.91779"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1"
+     width="500px" /><line class="link" stroke-width="6px" style="stroke: rgb(124, 124, 124); opacity: 0.4;" x1="911.2398273007854" y1="454.1892843546259" x2="924.6758772404966" y2="520.0990305930086"></line><line class="link" stroke-width="1px" style="stroke: rgb(124, 124, 124); opacity: 0;" x1="924.6758772404966" y1="520.0990305930086" x2="225.77341594676776" y2="471.215057001981"></line><line class="link" stroke-width="1px" style="stroke: rgb(124, 124, 124); opacity: 0;" x1="911.2398273007854" y1="454.1892843546259" x2="225.77341594676776" y2="471.215057001981"></line><line class="link" stroke-width="1px" style="stroke: rgb(124, 124, 124); opacity: 0;" x1="924.6758772404966" y1="520.0990305930086" x2="279.40696351832224" y2="553.3029975981095"></line><line class="link" stroke-width="1px" style="stroke: rgb(124, 124, 124); opacity: 0;" x1="911.2398273007854" y1="454.1892843546259" x2="279.40696351832224" y2="553.3029975981095"></line><line class="link" stroke-width="4.872460594643195px" style="stroke: rgb(124, 124, 124); opacity: 0.4;" x1="279.40696351832224" y1="553.3029975981095" x2="225.77341594676776" y2="471.215057001981"></line><g class="node" transform="translate(911.2398273007854,454.1892843546259)"><circle r="6" style="stroke: rgb(255, 255, 255); stroke-width: 3px; fill: rgb(0, 0, 255);"></circle></g><g class="node" transform="translate(225.77341594676776,471.215057001981)"><circle r="6" style="stroke: rgb(255, 255, 255); stroke-width: 3px; fill: rgb(0, 255, 0);"></circle></g><g class="node" transform="translate(279.40696351832224,553.3029975981095)"><circle r="6" style="stroke: rgb(255, 255, 255); stroke-width: 3px; fill: rgb(255, 0, 0);"></circle></g><g class="node" transform="translate(924.6758772404966,520.0990305930086)"><circle r="6" style="stroke: rgb(255, 255, 255); stroke-width: 3px; fill: rgb(0, 0, 0);"></circle></g><g class="anchorNode" transform="translate(911.2398273007854,454.1892843546259)"><circle r="0" style="fill: rgb(255, 255, 255);"></circle><text style="fill: rgb(85, 85, 85); font-family: Arial; font-size: 24px;"></text></g><g class="anchorNode" transform="translate(911.6791524546034,443.50628476521274)"><circle r="0" style="fill: rgb(255, 255, 255);"></circle><text transform="translate(-3.356188379181301,5)" style="fill: rgb(85, 85, 85); font-family: Arial; font-size: 24px;">F</text></g><g class="anchorNode" transform="translate(225.77341594676776,471.215057001981)"><circle r="0" style="fill: rgb(255, 255, 255);"></circle><text style="fill: rgb(85, 85, 85); font-family: Arial; font-size: 24px;"></text></g><g class="anchorNode" transform="translate(218.21788568029598,463.70687762205614)"><circle r="0" style="fill: rgb(255, 255, 255);"></circle><text transform="translate(-37.605171527763346,5)" style="fill: rgb(85, 85, 85); font-family: Arial; font-size: 24px;">GRÜNE</text></g><g class="anchorNode" transform="translate(279.40696351832224,553.3029975981095)"><circle r="0" style="fill: rgb(255, 255, 255);"></circle><text style="fill: rgb(85, 85, 85); font-family: Arial; font-size: 24px;"></text></g><g class="anchorNode" transform="translate(281.78220770764875,563.6213619397624)"><circle r="0" style="fill: rgb(255, 255, 255);"></circle><text transform="translate(-9.695888537226082,5)" style="fill: rgb(85, 85, 85); font-family: Arial; font-size: 24px;">SPÖ</text></g><g class="anchorNode" transform="translate(924.6758772404966,520.0990305930086)"><circle r="0" style="fill: rgb(255, 255, 255);"></circle><text style="fill: rgb(85, 85, 85); font-family: Arial; font-size: 24px;"></text></g><g class="anchorNode" transform="translate(929.0168937491094,529.8922207994622)"><circle r="0" style="fill: rgb(255, 255, 255);"></circle><text transform="translate(-7.434489576382209,5)" style="fill: rgb(85, 85, 85); font-family: Arial; font-size: 24px;">ÖVP</text></g></svg>
