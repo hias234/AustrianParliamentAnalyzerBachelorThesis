@@ -27,7 +27,7 @@ To collect the needed files automatically, RSS feeds are used. There are feeds a
 \section{Transformation}
 \label{sec:transformation}
 The next step is the transformation of the HTML-files into Java objects (transformation of semi-/unstructured data to structured data). To be able to extract the desired information out of the HTML-files, the structure of the stenographic transcripts and politician profiles was investigated. Then undesired HTML-structures were removed, because they avoided a correct information extraction. For example, the page breaks and page headers in the full text transcripts were removed. Finally, the tag structure of the HTML documents and regular expressions were used to find the required data. 
-This has proven to be a very challenging task since the transcripts changed over time. For example, in the full text transcripts since the $21^{st}$ legislative period, the politicians were referenced with a link to their profile, whereas in the transcripts of the $20^{th}$ period, there were only politician names. This made it much harder to find the right politicians as the full list of politicians had to be searched for a politician with the same name and title(s). To transform the HTML-files with good quality, for the transcripts of the $20^{th}$ period, there was an extra transformation step which could find the politicians without the link to their profiles.
+This has proven to be a very challenging task since the transcripts changed over time. For example, in the full text transcripts since the $21^{st}$ legislative period, the politicians were referenced with a link to their profile, whereas in the transcripts of the $20^{th}$ period, there were only politician names. This made it much harder to find the right politicians as the full list of politicians had to be scanned for a politician with the same name and title(s). To transform the HTML-files with good quality, for the transcripts of the $20^{th}$ period, there was an extra transformation step which could find the politicians without the link to their profiles.
 
 \subsection{Transformation of the Politician Profiles}
 %Figure \ref{fig:politician_profile_example} shows such a Profile. 
@@ -125,6 +125,7 @@ $$w_p(d_i,p_1,p_2) =
 \end{cases}
 $$
 
+\todo{sprachlich holprig}
 In this thesis politician relation graphs get built for all legislative periods, to be able to view the structure of each period separately. To achieve to get a graph for only one period, only the discussions of this period were taken into account. There also has to be considered that there exists an edge between two politicians only if they spoke at least once in the same discussion.
 
 \subsection{Parliamentary Club Relation Graph}

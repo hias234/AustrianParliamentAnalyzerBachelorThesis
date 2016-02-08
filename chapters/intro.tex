@@ -1,11 +1,11 @@
 \chapter{Introduction}
 \label{sec:introduction}
-One of the most crucial requirements of a democracy is transparency. There are several ways how one can gain information about the current and past political activities in Austria. One of the best possibilities among them are the publicly available protocols of the national council sessions. In these protocols every word said in a session is written down and that makes up the corresponding protocol. Unfortunately, these protocols are very long and it is hard to gain meaning out of it, because of its plain and simple structure and the great amount of data.
+One of the most crucial requirements of a democracy is transparency. There are several ways how one can gain information about the current and past political activities in Austria. One of the best possibilities among them are the publicly available protocols of the national council sessions. In these transcripts every word said in a session is written down and that makes up the corresponding protocol. Unfortunately, these protocols are very long and it is hard to gain meaning out of it, because of its plain and simple structure and the great amount of data.
 
 To be able to analyze and visualize the activities and relations of the politicians and parties in a better way, and to make the structure of the political system accessible to a broader audience, analysis tools are needed. This thesis documents the methods that can be used to perform automated analysis over the available data. The protocols are being extracted, transformed, analyzed and visualized.
 
 \section{Research Goals}
-The protocols are currently available in semi-structured form - through HTML files.\footnote{Until the 19. legislative period, the protocols are only available in PDF-format. These protocols cannot be extracted with reasonable quality. Therefore they won't be used in the further work.} To be able to properly persist and analyze the data, the protocols have to be transformed into a fully structured form (e.g. Java Objects). The following elements will be extracted:
+The protocols are currently available in semi-structured form - as HTML files.\footnote{Until the 19. legislative period, the protocols are only available in PDF-format. These protocols cannot be extracted with reasonable quality. Therefore they won't be used in the further work.} To be able to properly persist and analyze the data, the protocols have to be transformed into a fully structured form (e.g. Java Objects). The following elements will be extracted:
 \begin{itemize}
   \item Legislative periods and their sessions
   \item Politicians and their mandates
@@ -25,14 +25,14 @@ As soon as this is done, the extracted data can be persisted into an arbitrary r
 In the final step the results should be visualized via a web application. The focus hereby lies in making the results as easy to understand as possible.
 
 \section{Austrian Parliament}
-The analysis approaches in this thesis can basically be used for every parliament or other similar political structure, given that data is available in a similar form. As this work is done at an Austrian university and the protocols of the national council are available as open data, the show case is built up on the Austrian parliament.
+The analysis approaches presented in this thesis can basically be used for every parliament or other similar political structure, given that data is available in a similar form. As this work is done at an Austrian university and the protocols of the national council are available as open data, the show case is built up on the Austrian parliament.
 
 The Austrian parliament basically consists of two chambers, the national council and the federal council. The national council is elected through federal elections, whereas the federal council consists of delegates of the 9 provinces. Both chambers have different responsibilities and functions, and their goal is to ensure that the decisions are in the best interest for the Austrian people \cite{AustrianParliament_2015}.
 
 \subsection{National Council}
 The national council consists of 183 members, which can band together to form so called parliamentary clubs. Usually for each political party, which got elected in the national council, there is one parliamentary club, but that is no necessity. The tasks of the national council include law-making, controlling the government, seeking solutions for current problems, determining the budget and much more \cite{AustrianParliament_2015}.
 
-After every election one or more parliamentary clubs have to build the government. These parliament clubs have to have in total at least 92 mandates (more than half of the overall mandates of 183). Politicians of the government are then selected to be the federal ministers. All other parliamentary clubs, which are not in the government are in the so called opposition. In most cases the government can make laws without the opposition, but in some special cases there is $\frac{2}{3}$ majority needed \cite{AustrianParliament_2015}.
+After every election one or more parliamentary clubs have to build the government. These parliament clubs have to have in total at least 92 mandates (more than half of the overall mandates of 183). Politicians of the government are then selected to be the federal ministers. All other parliamentary clubs, which are not in the government are in the so called opposition. In most cases the government can make laws without the opposition, but in some special cases a two-third majority is needed \cite{AustrianParliament_2015}.
 
 \subsection{Federal Council}
 The federal council consists of 61 members. As the members are delegates of the provinces, their main duty is to represent their province and make sure the politics in the parliament are in the interest of the province they represent. To do so, they can raise objections against legislation of the national council, but most of the time the federal council only has the power to delay legislation and not to prevent it \cite{AustrianParliament_2015}.
